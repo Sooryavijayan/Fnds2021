@@ -1,34 +1,6 @@
 
-Fake news Detection¶
-I-Newspaper2.jpg
 
-Importing required library
-Here I am going to importing some of the required library, if extra library is required to install It will be install later on.
 
-In [1]:
-import pandas as pd
-import numpy as np
-import seaborn as sns
-import matplotlib.pyplot as plt
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
-from sklearn.metrics import classification_report
-import re
-import string
-Inserting fake and real dataset
-In [2]:
-df_fake = pd.read_csv("Fake.csv")
-df_true = pd.read_csv("True.csv")
-In [3]:
-df_fake.head(5)
-Out[3]:
-title	text	subject	date
-0	Donald Trump Sends Out Embarrassing New Year’...	Donald Trump just couldn t wish all Americans ...	News	December 31, 2017
-1	Drunk Bragging Trump Staffer Started Russian ...	House Intelligence Committee Chairman Devin Nu...	News	December 31, 2017
-2	Sheriff David Clarke Becomes An Internet Joke...	On Friday, it was revealed that former Milwauk...	News	December 30, 2017
-3	Trump Is So Obsessed He Even Has Obama’s Name...	On Christmas day, Donald Trump announced that ...	News	December 29, 2017
-4	Pope Francis Just Called Out Donald Trump Dur...	Pope Francis used his annual Christmas Day mes...	News	December 25, 2017
-In [4]:
 Fake news Detection¶
 I-Newspaper2.jpg
 
